@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择" />
+    <LinearLayout
+        android:id="@+id/btn_min_height"
+        android:layout_width="match_parent"
+        android:background="@drawable/button_bg"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/min_height"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btn_max_height"
+        android:layout_width="match_parent"
+        android:background="@drawable/button_bg"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/max_height"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- 图片按钮 -->
+        <ImageButton
+            android:id="@+id/imageBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher_background"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="centerInside"/>
+
+        <!-- 文本覆盖在图片上 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="点击提交"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="center"/>
+
+    </FrameLayout>
+
+</LinearLayout>

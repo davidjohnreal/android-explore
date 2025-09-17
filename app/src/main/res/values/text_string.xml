@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="choose_height">身高选择</string>
+    <string name="min_height">身高&lt;155cm</string>
+    <string name="max_height">身高&gt;190cm</string>
+</resources>

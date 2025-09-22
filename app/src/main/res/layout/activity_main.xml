@@ -10,7 +10,40 @@
 
 
 <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/fragment_container"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+<!--        <androidx.viewpager.widget.ViewPager-->
+<!--            android:id="@+id/viewPagerTab"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1" />-->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerTab2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"/>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tl_title"
+            app:tabMode="scrollable"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"/>
+        <!-- ViewPager：Fragment 容器 -->
+    </LinearLayout>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+</LinearLayout>
